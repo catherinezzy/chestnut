@@ -1,1 +1,9 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @events.each do |event| %>
+  <div>
+    <h1><%= event.name %></h1><br />
+    <i><%= event.address %></i><br />
+    <p><%= event.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
